@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   description: "Frontend software engineer building polished React and Next.js products, multilingual platforms, operational CRMs, and accessible interfaces.",
   authors: [{ name: "Madina Batoshova" }],
   keywords: ["Frontend Software Engineer", "React Developer", "Next.js Developer", "TypeScript", "Product Engineer", "Uzbekistan"],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     title: "Madina Batoshova — Frontend Software Engineer",

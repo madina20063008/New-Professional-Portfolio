@@ -7,6 +7,7 @@ import { projects } from "../data";
 export const metadata: Metadata = {
   title: "Projects",
   description: "Selected product work by Madina Batoshova across operational CRMs, multilingual platforms, commerce, healthcare, real estate, and full-stack systems.",
+  alternates: { canonical: "/work" },
 };
 
 export default function WorkPage() {

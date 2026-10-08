@@ -4,7 +4,11 @@ import { SiteFooter } from "../components/SiteFooter";
 import { SiteHeader } from "../components/SiteHeader";
 import { certifications, experience, skillGroups } from "../data";
 
-export const metadata: Metadata = { title: "Résumé", description: "Résumé of Madina Batoshova, frontend software engineer specializing in React, Next.js, TypeScript, and product interfaces." };
+export const metadata: Metadata = {
+  title: "Résumé",
+  description: "Résumé of Madina Batoshova, frontend software engineer specializing in React, Next.js, TypeScript, and product interfaces.",
+  alternates: { canonical: "/resume" },
+};
 
 export default function ResumePage() {
   return (

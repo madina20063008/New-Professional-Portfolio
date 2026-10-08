@@ -26,20 +26,20 @@ export function SiteHeader() {
       <nav className="desktop-nav" aria-label="Primary navigation">
         {navItems.map((item) => {
           const active = item.href === "/" ? pathname === "/" : pathname === item.href || pathname.startsWith(`${item.href}/`);
-          return <a key={item.href} href={item.href} className={active ? "is-active" : undefined} aria-current={active ? "page" : undefined}>{item.label}</a>;
+          return <Link key={item.href} href={item.href} className={active ? "is-active" : undefined} aria-current={active ? "page" : undefined}>{item.label}</Link>;
         })}
       </nav>
-      <a href="/contact" className={`header-cta desktop-cta ${pathname === "/contact" ? "is-active" : ""}`} aria-current={pathname === "/contact" ? "page" : undefined}>Let&apos;s talk <span>↗</span></a>
+      <Link href="/contact" className={`header-cta desktop-cta ${pathname === "/contact" ? "is-active" : ""}`} aria-current={pathname === "/contact" ? "page" : undefined}>Let&apos;s talk <span>↗</span></Link>
       <div className={`mobile-menu ${menuOpen ? "is-open" : ""}`}>
         <button type="button" className="mobile-menu-toggle" aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={menuOpen} onClick={() => setMenuOpen((current) => !current)}><span/><span/><span/></button>
         {menuOpen && <div className="mobile-menu-panel">
           <nav aria-label="Mobile navigation">
             {navItems.map((item) => {
               const active = item.href === "/" ? pathname === "/" : pathname === item.href || pathname.startsWith(`${item.href}/`);
-              return <a key={item.href} href={item.href} className={active ? "is-active" : undefined} aria-current={active ? "page" : undefined}>{item.label}<span>→</span></a>;
+              return <Link key={item.href} href={item.href} onClick={() => setMenuOpen(false)} className={active ? "is-active" : undefined} aria-current={active ? "page" : undefined}>{item.label}<span>→</span></Link>;
             })}
           </nav>
-          <a href="/contact" className={`mobile-contact ${pathname === "/contact" ? "is-active" : ""}`}>Let&apos;s talk <span>↗</span></a>
+          <Link href="/contact" onClick={() => setMenuOpen(false)} className={`mobile-contact ${pathname === "/contact" ? "is-active" : ""}`}>Let&apos;s talk <span>↗</span></Link>
         </div>}
       </div>
     </header>

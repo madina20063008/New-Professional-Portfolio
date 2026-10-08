@@ -1,8 +1,17 @@
+import Image from "next/image";
+
 export function ProjectVisual({ tone, compact = false, image, imageAlt = "" }: { tone: string; compact?: boolean; image?: string; imageAlt?: string }) {
   if (image) {
     return (
       <div className={`project-visual project-visual-image tone-${tone} ${compact ? "compact" : ""}`}>
-        <img src={image} alt={imageAlt} />
+        <Image
+          src={image}
+          alt={imageAlt}
+          width={1200}
+          height={675}
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
+          loading="lazy"
+        />
       </div>
     );
   }

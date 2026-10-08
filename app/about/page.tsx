@@ -4,7 +4,11 @@ import { SiteFooter } from "../components/SiteFooter";
 import { SiteHeader } from "../components/SiteHeader";
 import { skillGroups } from "../data";
 
-export const metadata: Metadata = { title: "About", description: "About Madina Batoshova, a frontend software engineer focused on thoughtful product interfaces and maintainable React systems." };
+export const metadata: Metadata = {
+  title: "About",
+  description: "About Madina Batoshova, a frontend software engineer focused on thoughtful product interfaces and maintainable React systems.",
+  alternates: { canonical: "/about" },
+};
 
 export default function AboutPage() {
   return (

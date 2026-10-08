@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import { SiteFooter } from "../components/SiteFooter";
 import { SiteHeader } from "../components/SiteHeader";
 
-export const metadata: Metadata = { title: "Contact", description: "Contact frontend software engineer Madina Batoshova for product, frontend, and collaboration opportunities." };
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Contact frontend software engineer Madina Batoshova for product, frontend, and collaboration opportunities.",
+  alternates: { canonical: "/contact" },
+};
 
 export default function ContactPage() {
   return (

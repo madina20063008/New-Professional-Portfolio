@@ -3,7 +3,11 @@ import { SiteFooter } from "../components/SiteFooter";
 import { SiteHeader } from "../components/SiteHeader";
 import { certifications, experience } from "../data";
 
-export const metadata: Metadata = { title: "Experience", description: "Professional experience, education, and certifications of frontend software engineer Madina Batoshova." };
+export const metadata: Metadata = {
+  title: "Experience",
+  description: "Professional experience, education, and certifications of frontend software engineer Madina Batoshova.",
+  alternates: { canonical: "/experience" },
+};
 
 export default function ExperiencePage() {
   return (
