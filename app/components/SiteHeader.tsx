@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -19,7 +20,7 @@ export function SiteHeader() {
   return (
     <header className="site-header shell">
       <Link href="/" className="brand" aria-label="Madina Batoshova home">
-        <span className="brand-mark">MB</span>
+        <Image className="brand-mark" src="/logo.png" alt="" width={38} height={38} priority />
         <span>Madina Batoshova</span>
       </Link>
       <nav className="desktop-nav" aria-label="Primary navigation">
