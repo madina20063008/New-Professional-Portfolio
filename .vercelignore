@@ -1,0 +1,6 @@
+.openai
+.wrangler
+.vinext
+dist
+outputs
+.env*

@@ -29,3 +29,9 @@ npm run build
 ```
 
 The portfolio is public and does not use accounts or sign-in.
+
+## Vercel
+
+The default scripts use Next.js. Deploy with `npx vercel --prod`. Vercel uses `vercel.json` and builds with `npm run build`. The site has no database or secret requirements. Production social metadata uses `VERCEL_PROJECT_PRODUCTION_URL`; set `NEXT_PUBLIC_SITE_URL` to override it for a custom domain.
+
+Original Cloudflare development scripts remain available as `npm run dev:sites` and `npm run build:sites`, using local `.openai/hosting.json`.

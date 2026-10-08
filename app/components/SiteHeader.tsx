@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import Link from "next/link";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -17,10 +18,10 @@ export function SiteHeader() {
 
   return (
     <header className="site-header shell">
-      <a href="/" className="brand" aria-label="Madina Batoshova home">
+      <Link href="/" className="brand" aria-label="Madina Batoshova home">
         <span className="brand-mark">MB</span>
         <span>Madina Batoshova</span>
-      </a>
+      </Link>
       <nav className="desktop-nav" aria-label="Primary navigation">
         {navItems.map((item) => {
           const active = item.href === "/" ? pathname === "/" : pathname === item.href || pathname.startsWith(`${item.href}/`);

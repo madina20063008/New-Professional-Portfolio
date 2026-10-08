@@ -5,6 +5,7 @@ import { ProjectVisual } from "../../components/ProjectVisual";
 import { SiteFooter } from "../../components/SiteFooter";
 import { SiteHeader } from "../../components/SiteHeader";
 import { projects } from "../../data";
+import { siteUrl } from "../../site-url";
 
 export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
@@ -15,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const project = projects.find((item) => item.slug === slug);
   if (!project) return { title: "Project not found" };
   const previewImage = project.images?.[0]
-    ? `https://madina-batoshova-portfolio.jamshidzayniyev19082.chatgpt.site${project.images[0]}`
+    ? `${siteUrl}${project.images[0]}`
     : undefined;
   return {
     title: project.title,

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { siteUrl } from "./site-url";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://madina-batoshova-portfolio.jamshidzayniyev19082.chatgpt.site"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Madina Batoshova — Frontend Software Engineer",
     template: "%s — Madina Batoshova",
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "Madina Batoshova — Frontend Software Engineer",
     description: "Thoughtful React and Next.js products, multilingual platforms, operational CRMs, and accessible interfaces.",
-    url: "https://madina-batoshova-portfolio.jamshidzayniyev19082.chatgpt.site",
+    url: siteUrl,
     siteName: "Madina Batoshova",
     images: [{ url: "/og.png", width: 1672, height: 941, alt: "Madina Batoshova — Frontend Software Engineer" }],
   },
