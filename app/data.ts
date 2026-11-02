@@ -19,6 +19,49 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    "slug": "menyuza",
+    "title": "Menyuza · QRMenu",
+    "label": "Restaurant SaaS · QR menus · Ordering platform",
+    "year": "2026",
+    "summary": "A multilingual restaurant platform connecting branded QR menus, table-based ordering, restaurant operations, and a separate workspace for platform administrators.",
+    "challenge": "Guests need a fast menu without installing an app, while restaurant teams need reliable control over dishes, availability, tables, and orders. A multi-restaurant service also needs separate access for owners, waiters, and platform administrators.",
+    "solution": "The platform uses Next.js, TypeScript, Prisma, and PostgreSQL to connect a three-language guest menu with restaurant and super-admin workspaces. Guests browse categories and dishes through a QR link; ordering can be enabled per restaurant. Restaurant teams manage menus, branches, tables, staff, order statuses, and analytics. Branding includes five themes and printable QR posters, while platform tools manage restaurant access, subscription records, enquiries, and audit history.",
+    "impact": "One product connects the guest-facing menu with day-to-day restaurant management and platform administration. Menu changes can be published without reprinting a paper menu. The linked Osh Markazi demo currently runs in view-only mode; ordering and waiter workflows are implemented and controlled by restaurant settings. Screenshots illustrate the product interface rather than measured business results.",
+    "role": "Full-stack development · Product interface · Role-based workflows",
+    "stack": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "next-intl",
+      "Tailwind CSS",
+      "QR Code Styling"
+    ],
+    "features": [
+      "Uzbek, Russian, and English menus",
+      "Table QR codes and printable posters",
+      "Five branded menu themes",
+      "Configurable ordering and waiter workspace",
+      "Menu, branch, and staff management",
+      "Restaurant statistics and QR analytics",
+      "Super-admin and subscription management",
+      "Role-based authentication"
+    ],
+    "images": [
+      "/projects/showcase/menyuza-01.webp",
+      "/projects/showcase/menyuza-02.webp",
+      "/projects/showcase/menyuza-05.webp",
+      "/projects/showcase/menyuza-03.webp"
+    ],
+    "live": "https://menyuza.uz/",
+    "secondaryLive": {
+      "label": "Platform demo",
+      "url": "https://qrmenu-blue-one.vercel.app/"
+    },
+    "tone": "sand"
+  },
+  {
     slug: "timepro-faceid",
     title: "TimePro FaceID",
     label: "Attendance CRM & marketing platform",
