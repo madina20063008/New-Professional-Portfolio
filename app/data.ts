@@ -55,10 +55,6 @@ export const projects: Project[] = [
       "/projects/showcase/menyuza-03.webp"
     ],
     "live": "https://menyuza.uz/",
-    "secondaryLive": {
-      "label": "Platform demo",
-      "url": "https://qrmenu-blue-one.vercel.app/"
-    },
     "tone": "sand"
   },
   {
